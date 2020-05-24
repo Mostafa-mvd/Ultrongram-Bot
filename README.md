@@ -44,7 +44,7 @@ and in windows use:
 python3.8 setup.py develop --user
 ```
 
-forth:
+fourth:
 
 You can easily activate the bot on your computer by going to the front-end folder and run the conversation module, and use the telegram bot with the username [@instagram_py_bot] for activities in instagram.
 
