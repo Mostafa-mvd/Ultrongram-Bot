@@ -5,13 +5,13 @@ from instagram_bot import ReplyKeyboardMarkup
 
 
 
-username_keyboard_button = [['نام کاربری']]
+username_keyboard_button = [['نام کاربری - username']]
 
-password_keyboard_buttons = [['رمز عبور', 'مرحله قبل']]
+password_keyboard_buttons = [['رمز عبور - password', 'مرحله قبل - previous step']]
 
-start_keyboard_buttons = [['شروع فعالیت', 'مرحله قبل']]
+start_keyboard_buttons = [['شروع فعالیت - start button', 'مرحله قبل - previous step']]
 
-reset_keyboard_button = [['شروع دوباره']] 
+reset_keyboard_button = [['شروع دوباره - start again']] 
 
 
 username_keyboard_markup = ReplyKeyboardMarkup(username_keyboard_button, one_time_keyboard=True, resize_keyboard=True)

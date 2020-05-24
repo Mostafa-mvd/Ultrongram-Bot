@@ -24,7 +24,7 @@ def conversationWithUser():
         states={
             CHOOSING_USERNAME:
             [
-                MessageHandler(Filters.regex('^نام کاربری$'), interact._showEnterUserNameMessage)
+                MessageHandler(Filters.regex('^نام کاربری - username$'), interact._showEnterUserNameMessage)
             ],
 
             GETTING_USERNAME: 
@@ -35,7 +35,7 @@ def conversationWithUser():
 
             CHOOSING_PASSWORD: 
             [
-                MessageHandler(Filters.regex('^رمز عبور$'), interact._showEnterPasswordMessage)
+                MessageHandler(Filters.regex('^رمز عبور - password$'), interact._showEnterPasswordMessage)
             ],
 
             GETTING_PASSWORD:
@@ -46,7 +46,7 @@ def conversationWithUser():
 
             START_BUTTON:
             [
-                MessageHandler(Filters.regex('^شروع فعالیت$'), interact._clickStartActivity)
+                MessageHandler(Filters.regex('^شروع فعالیت - start button$'), interact._clickStartActivity)
             ],
 
             BUTTON_HANDLER:
@@ -58,7 +58,7 @@ def conversationWithUser():
 
         fallbacks=
         [
-            MessageHandler(Filters.regex('^(مرحله قبل|شروع دوباره)$'), interact._backButton),
+            MessageHandler(Filters.regex('^(مرحله قبل - previous step|شروع فعالیت - start button)$'), interact._backButton),
             CommandHandler(interact.cmd.show_id_cmd, interact.cmd._showIdCommand),
             MessageHandler(Filters.text, interact._waitingMessageForOptions)
         ]

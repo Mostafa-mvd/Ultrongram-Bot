@@ -52,7 +52,7 @@ from instagram_bot.front_end.config import my_bot_token, get24HourMessage, get7d
 from instagram_bot.front_end.config import warning_to_click_unfollow_button, error_txt_file_address, runtime_error_message, login_error_message, warning_to_unfollow_persons, close_driver_error_message, error_message_for_oprating_system, error_message_for_browers
 from instagram_bot.front_end.config import CHOOSING_USERNAME, GETTING_USERNAME, CHOOSING_PASSWORD, GETTING_PASSWORD, START_BUTTON, BUTTON_HANDLER
 from instagram_bot.front_end.config import username_button_message, password_button_message, input_password_message, input_username_message, start_button_message, waiting_message, start_activity_message, choose_option_message, error_message_to_execute_command
-from instagram_bot.front_end.config import start_command_message, admin_chat_id
+from instagram_bot.front_end.config import start_command_message
 
 
 
