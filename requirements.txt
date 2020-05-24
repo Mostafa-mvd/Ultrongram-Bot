@@ -1,0 +1,6 @@
+requests==2.18.4
+selenium==3.141.0
+python-telegram-bot==12.7
+telegram==0.0.1
+instaloader==4.4.1
+beautifulsoup4==4.9.1
