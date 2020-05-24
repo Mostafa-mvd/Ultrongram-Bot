@@ -3,7 +3,7 @@
 
 
 from instagram_bot import username_keyboard_markup
-from instagram_bot import admin_chat_id, username_button_message, start_command_message, CHOOSING_USERNAME
+from instagram_bot import username_button_message, start_command_message, CHOOSING_USERNAME
 import time
 
 

@@ -18,10 +18,6 @@ elif system() == "Windows":
 
 CHOOSING_USERNAME, GETTING_USERNAME, CHOOSING_PASSWORD, GETTING_PASSWORD, START_BUTTON, BUTTON_HANDLER = range(0, 6)
 
-
-admin_chat_id                    = 459185918
-
-
 my_bot_token                     = '966866956:AAHafludOO9bviefKtMSkY8tNr2yMIgDnX4'
 
 
