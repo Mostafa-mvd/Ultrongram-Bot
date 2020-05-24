@@ -41,7 +41,12 @@ sudo python3.8 setup.py develop --user
 and in windows use:
 
 ```bash
-python3.8 setup.py develop --user
+python3.8 setup.py develop
+```
+or use:
+
+```bash
+python3.8 setup.py install
 ```
 
 fourth:
