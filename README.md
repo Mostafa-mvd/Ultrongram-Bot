@@ -26,4 +26,7 @@ This project is an Instagram web bot with selenium framework, the client side wh
 and in windows use python3.8 setup.py develop --user
 
 4 - You can easily activate the bot on your computer by going to the front-end folder and run the conversation module, and use the telegram bot with the username @instagram_py_bot for activities in instagram.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 28f0b03e5d7ae45a61516315e4101d3233081196
