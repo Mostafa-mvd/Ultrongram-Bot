@@ -18,15 +18,27 @@ This project is an Instagram web bot with selenium framework, the client side wh
 
 # run project:
 
-1 - you need to install firefox browser
+you need to install firefox browser
 
-2 - python3.8 -m pip install -r requirements.txt
+``` bash
+python3.8 -m pip install -r requirements.txt
+```
 
-3 - open instagram_bot-1.0.0 folder in cmd or terminal or whatever and in linux use sudo python3.8 setup.py develop --user
-and in windows use python3.8 setup.py develop --user
+open instagram_bot-1.0.0 folder in cmd or terminal or whatever
+in linux use:
 
-4 - You can easily activate the bot on your computer by going to the front-end folder and run the conversation module, and use the telegram bot with the username @instagram_py_bot for activities in instagram.
-<<<<<<< HEAD
+```bash
+sudo python3.8 setup.py develop --user
+```
+and in windows use:
+
+```bash
+python3.8 setup.py develop --user
+```
+
+You can easily activate the bot on your computer by going to the front-end folder and run the conversation module, and use the telegram bot with the username [@instagram_py_bot] for activities in instagram.
+
 
 =======
+
 >>>>>>> 28f0b03e5d7ae45a61516315e4101d3233081196
