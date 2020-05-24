@@ -5,6 +5,8 @@ activities with FREE INSTAGRAM BOT, you can simply like, follow, unfollow and et
 
 Hello to all
 
+my name is mostafa vahdani dehkallani and i am from iran my email is vahdanim77@gmail.com and i would be happy to hear your feedback on this project
+
 This project is an Instagram web bot with selenium framework, the client side which is written with python-telegram-bot and the server side is written with selenium, beautifulsoup and requests.
 
 
