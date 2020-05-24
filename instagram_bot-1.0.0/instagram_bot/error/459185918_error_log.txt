@@ -1,6 +1,0 @@
-Error is:
-
-from  <class 'TypeError'>  :  no xpath element found for send keys to box  -  2020-05-24 11:12:20
-
-					======================================================
-

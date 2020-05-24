@@ -1,7 +1,0 @@
-setup.py
-instagram_bot/__init__.py
-instagram_bot/run_project.py
-instagram_bot.egg-info/PKG-INFO
-instagram_bot.egg-info/SOURCES.txt
-instagram_bot.egg-info/dependency_links.txt
-instagram_bot.egg-info/top_level.txt
