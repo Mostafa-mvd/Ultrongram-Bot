@@ -12,7 +12,7 @@ class JavaScriptObject(dict):
             except KeyError:
                 return super().__getattribute__(item)
         except AttributeError:
-            return f"Java script object has no attribute {item}"
+            return "Java script object has no attribute {}".format(item)
 
 
 
