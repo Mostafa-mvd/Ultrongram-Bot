@@ -17,7 +17,6 @@ class TestGeneral(unittest.TestCase):
     def setUpClass(cls):
         os.chdir(".")
         gecko_path = os.getcwd() + "/back_end" + firefox_driver_address_for_linux64
-        print(gecko_path)
 
         cls.driver = webdriver.Firefox(executable_path=gecko_path)
         cls.general = General(cls.driver)
@@ -52,15 +51,20 @@ class TestGeneral(unittest.TestCase):
         self.general._randomTimeToSleep(10, 30)
     
     def test_openPage(self):
+        self.general._openPage("https://google.com")
+
         with patch("instagram_bot.back_end.general_works.requests.get") as mocked_get:
             with self.assertRaises(RuntimeError):
                 mocked_get.return_value.status_code = 503
-                self.general._openPage("https://google.com")
-                mocked_get.assert_called_with("https://google.com")
-            
-            mocked_get.return_value.status_code = 200
-            self.general._openPage("https://google.com")
-            mocked_get.assert_called_with("https://google.com")
+                self.general._openPage("https://instagram.com")
+                mocked_get.assert_called_with("https://instagram.com")
+    
+    def test_sendValueInBoxByXpath(self):
+        self.general._openPage("https://google.com")
+        self.general._sendValueInBoxByXpath("search", "//input[@name='q']", "hello word")
+
+        self.general._openPage("https://google.com")
+        self.general._sendValueInBoxByXpath("comment", "//input[@name='q']", "hello word")
             
 
 
