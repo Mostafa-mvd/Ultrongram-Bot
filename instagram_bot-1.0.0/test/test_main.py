@@ -37,8 +37,8 @@ class TestBot(unittest.TestCase):
     def test_show_links(self):
         # bot_acts = self.insta_bot._showLinks(self.bot_act_db_address, "telegram_button")
         # bot_acts = self.insta_bot._showLinks(self.bot_act_db_address, "insta_permanent_activities")
+        # bot_acts = self.insta_bot._showLinks(self.bot_act_db_address, "insta_temporary_activities")
         # bot_acts = self.insta_bot._showLinks(self.user_database_address, "followers")
-
         bot_acts = self.insta_bot._showLinks(self.user_database_address, "following")
         acts     = bot_acts[1]
 
