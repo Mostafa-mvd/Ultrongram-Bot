@@ -43,8 +43,6 @@ class Login:
 
 
 def loginToAccaunt(driver, username, password):
-    DisconnectionError = requests.exceptions.ConnectionError
-
     login              = Login(driver)
     general_obj        = login.general_obj
     current_url        = login_instagram_page

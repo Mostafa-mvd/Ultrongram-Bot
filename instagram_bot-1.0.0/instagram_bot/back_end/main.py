@@ -95,15 +95,15 @@ class InstagramBot:
         username               = self.username
 
         random_number               = choice(range(1, 3))
-        number_of_unfollow_per_hour = choice(range(7, 11))
+        number_of_follow_per_hour = choice(range(7, 11))
 
         if random_number == 1:
             hashtag_lst = getValues(hashtags_file_address)
-            followHashtags(driver, user_db_address, bot_activities_address, username, hashtag_lst, number_of_unfollow_per_hour)
+            followHashtags(driver, user_db_address, bot_activities_address, username, hashtag_lst, number_of_follow_per_hour)
 
         elif random_number == 2:
             username_list = getValues(names_file_address)
-            followNames(driver, username_list, username, number_of_unfollow_per_hour, user_db_address, bot_activities_address)
+            followNames(driver, username_list, username, number_of_follow_per_hour, user_db_address, bot_activities_address)
 
 
     def _likeTimeLine(self):
@@ -118,22 +118,6 @@ class InstagramBot:
         like_person._goToLikePerson(number_of_scroll, username)
 
 
-
-# if __name__ == "__main__":
-#     username = "my_username"
-#     password = "my_password"
-
-#     user_database_address = users_db_location + "459185918" + ".db"
-#     bot_act_db_address    = activities_db_location + "459185918" + "_activities.db"
-
-#     insta_bot = InstagramBot(username, password, user_database_address, bot_act_db_address)
-#     # insta_bot._follow()
-
-#     bot_acts = insta_bot._showLinks(bot_act_db_address, "telegram_button")
-#     acts     = bot_acts[1]
-
-#     for act in acts:
-#         print(f'{act[0]} - {act[1]}')
 
 
 
