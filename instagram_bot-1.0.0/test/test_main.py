@@ -46,7 +46,7 @@ class TestBot(unittest.TestCase):
     def tearDown(self):
         self.insta_bot.driver.close()
     
-    def show_links(self):
+    def test_a_show_links(self):
         bot_acts = self.insta_bot._showLinks(self.bot_act_db_address, "telegram_button")
         acts     = bot_acts[1]
         print_acts(acts)
@@ -72,24 +72,24 @@ class TestBot(unittest.TestCase):
         bot_acts = self.insta_bot._showLinks(self.user_database_address, "following")
         acts     = bot_acts[1]
         print_acts(acts)
-    
-    @ignore_warnings
-    def test_stop_tracking(self):
-        self.insta_bot._login()
-        self.insta_bot._updateLinks()
-        self.insta_bot._stopTracking()
 
     @ignore_warnings
-    def follow(self):
+    def test_b_follow(self):
         self.insta_bot._login()
         self.insta_bot._updateLinks()
         self.insta_bot._follow()
     
     @ignore_warnings
-    def like_follower(self):
+    def test_c_like_follower(self):
         self.insta_bot._login()
         self.insta_bot._updateLinks()
         self.insta_bot._likeTimeLine()
+
+    @ignore_warnings
+    def test_d_stop_tracking(self):
+        self.insta_bot._login()
+        self.insta_bot._updateLinks()
+        self.insta_bot._stopTracking()
 
 
 if __name__ == "__main__":

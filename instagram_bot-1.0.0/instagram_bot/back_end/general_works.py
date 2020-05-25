@@ -24,19 +24,21 @@ class General:
             raise DisconnectionError("Internet is not connect")
 
     def _randomTimeToSleep(self, begin, end):
+        try:
+            begin_number = random.choice(range(begin, end))
+            end_number   = random.choice(range(begin, end))
 
-        begin_number = random.choice(range(begin, end))
-        end_number   = random.choice(range(begin, end))
+            if (begin_number > end_number):
+                begin_number, end_number = end_number, begin_number
 
-        if (begin_number > end_number):
-            begin_number, end_number = end_number, begin_number
+            elif (begin_number == end_number):
+                end_number += begin_number
 
-        elif (begin_number == end_number):
-            end_number += begin_number
+            to_sleep     = random.choice(range(begin_number, end_number))
 
-        to_sleep     = random.choice(range(begin_number, end_number))
-
-        sleep(to_sleep)
+            sleep(to_sleep)
+        except IndexError:
+            raise IndexError("begin must be lower than end")
 
     def _quitBrowser(self):
         driver = self.driver
