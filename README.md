@@ -40,7 +40,7 @@ in linux use:
 ```bash
 sudo python3.8 setup.py develop --user
 ```
-and in windows use:
+and in windows use (recommended):
 
 ```bash
 python3.8 setup.py develop
